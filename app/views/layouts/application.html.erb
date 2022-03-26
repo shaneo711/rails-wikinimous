@@ -8,9 +8,19 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <script src="https://kit.fontawesome.com/75bcdb668a.js" crossorigin="anonymous"></script>
   </head>
 
   <body>
+    <ul class="nav nav-fill">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="/articles">Wikinimous</a>
+      </li>
+      <li class="nav-item">
+        <a href="/articles/new" class="nav-link">New Article</a>
+      </li>
+    </ul>
+    <hr>
     <%= yield %>
   </body>
 </html>
